@@ -1,0 +1,6 @@
+.github/
+.vscode/
+.gitattributes
+.prettierrc.ts
+eslint.config.ts
+tsconfig.json
