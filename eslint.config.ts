@@ -33,13 +33,6 @@ export default defineConfigWithVueTs(
       regexpConfigs["flat/recommended"],
     ],
     files: ["**/*.{ts,vue}"],
-    languageOptions: {
-      parserOptions: {
-        projectService: {
-          allowDefaultProject: ["eslint.config.ts", "vite.config.ts"],
-        },
-      },
-    },
   },
   deMorganConfigs.recommended,
   importXConfigs.recommended,
