@@ -7,4 +7,4 @@ export default {
     "prettier-plugin-tailwindcss",
     "prettier-plugin-packagejson",
   ],
-} as Config;
+} satisfies Config;
