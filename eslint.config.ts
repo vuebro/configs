@@ -1,3 +1,5 @@
+import type { ConfigWithExtendsArray } from "@eslint/config-helpers";
+
 import js from "@eslint/js";
 import json from "@eslint/json";
 import markdown from "@eslint/markdown";
@@ -33,6 +35,15 @@ export default defineConfigWithVueTs(
       regexpConfigs["flat/recommended"],
     ],
     files: ["**/*.{ts,vue}"],
+    rules: {
+      "import-x/no-extraneous-dependencies": [
+        "error",
+        {
+          devDependencies: ["*.config.ts"],
+          whitelist: ["electron"],
+        },
+      ],
+    },
   },
   deMorganConfigs.recommended,
   importXConfigs.recommended,
@@ -42,4 +53,4 @@ export default defineConfigWithVueTs(
   markdown.configs.recommended,
   packageJsonConfigs.recommended,
   prettierConfigsRecommended,
-);
+) as ConfigWithExtendsArray;
