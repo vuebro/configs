@@ -1,6 +1,8 @@
 .github/
 .vscode/
 .gitattributes
-.prettierrc.ts
 eslint.config.ts
+prettierrc.config.ts
 tsconfig.json
+uno.config.ts
+vite.config.ts
