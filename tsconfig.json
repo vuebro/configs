@@ -9,7 +9,6 @@
     "@tsconfig/strictest/tsconfig"
   ],
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "removeComments": true,
     "emitDeclarationOnly": false,
     "allowImportingTsExtensions": false,
