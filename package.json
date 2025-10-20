@@ -47,7 +47,7 @@
   "dependencies": {
     "@eslint/js": "^9.38.0",
     "@eslint/json": "^0.13.2",
-    "@eslint/markdown": "^7.4.0",
+    "@eslint/markdown": "^7.4.1",
     "@prettier/plugin-pug": "^3.4.2",
     "@tsconfig/strictest": "^2.0.6",
     "@unocss/preset-attributify": "^66.5.4",
@@ -81,10 +81,11 @@
     "typescript": "^5.9.3",
     "vite": "^7.1.11",
     "vite-plugin-vue-devtools": "^8.0.3",
+    "vue-eslint-parser-template-tokenizer-pug": "^1.0.0",
     "vue-tsc": "^3.1.1"
   },
   "devDependencies": {
     "@eslint/config-helpers": "^0.4.1",
-    "@types/node": "^24.8.1"
+    "@types/node": "^24.9.0"
   }
 }
