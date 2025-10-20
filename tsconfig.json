@@ -1,7 +1,5 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "tsc-alias": { "resolveFullPaths": true },
-  "vueCompilerOptions": { "plugins": ["@vue/language-plugin-pug"] },
   "extends": [
     "@vue/tsconfig/tsconfig",
     "@vue/tsconfig/tsconfig.dom",
@@ -9,10 +7,13 @@
     "@tsconfig/strictest/tsconfig"
   ],
   "compilerOptions": {
-    "removeComments": true,
-    "emitDeclarationOnly": false,
     "allowImportingTsExtensions": false,
-    "outDir": "dist",
-    "paths": { "@/*": ["./*"] }
-  }
+    "emitDeclarationOnly": false,
+    "outDir": "${configDir}/dist",
+    "paths": { "@/*": ["./*"] },
+    "removeComments": true,
+    "tsBuildInfoFile": "${configDir}/node_modules/.tmp/tsconfig.app.tsbuildinfo"
+  },
+  "tsc-alias": { "resolveFullPaths": true },
+  "vueCompilerOptions": { "plugins": ["@vue/language-plugin-pug"] }
 }
