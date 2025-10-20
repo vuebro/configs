@@ -41,7 +41,8 @@
     "lint": "eslint ."
   },
   "files": [
-    "dist"
+    "dist",
+    "tsconfig.json"
   ],
   "dependencies": {
     "@eslint/js": "^9.38.0",
