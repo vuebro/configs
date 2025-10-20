@@ -36,14 +36,14 @@
       "import": "./dist/vite.config.js"
     }
   },
-  "scripts": {
-    "build": "tsc",
-    "lint": "eslint ."
-  },
   "files": [
     "dist",
     "tsconfig.json"
   ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint ."
+  },
   "dependencies": {
     "@eslint/js": "^9.38.0",
     "@eslint/json": "^0.13.2",
@@ -59,7 +59,6 @@
     "@vue/eslint-config-typescript": "^14.6.0",
     "@vue/language-plugin-pug": "^3.1.1",
     "@vue/tsconfig": "^0.8.1",
-    "eslint": "^9.38.0",
     "eslint-config-flat-gitignore": "^2.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
