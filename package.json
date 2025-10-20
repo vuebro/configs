@@ -44,12 +44,14 @@
     "build": "tsc",
     "lint": "eslint ."
   },
-  "dependencies": {
+  "devDependencies": {
+    "@eslint/config-helpers": "^0.4.1",
     "@eslint/js": "^9.38.0",
     "@eslint/json": "^0.13.2",
     "@eslint/markdown": "^7.4.0",
     "@prettier/plugin-pug": "^3.4.2",
     "@tsconfig/strictest": "^2.0.6",
+    "@types/node": "^24.8.1",
     "@unocss/preset-attributify": "^66.5.4",
     "@unocss/preset-icons": "^66.5.4",
     "@unocss/preset-tagify": "^66.5.4",
@@ -72,17 +74,9 @@
     "eslint-plugin-regexp": "^2.10.0",
     "eslint-plugin-vue": "^10.5.1",
     "jiti": "^2.6.1",
-    "prettier": "^3.6.2",
     "prettier-plugin-packagejson": "^2.5.19",
     "prettier-plugin-tailwindcss": "^0.7.1",
-    "pug": "^3.0.3",
-    "tsc-alias": "^1.8.16",
-    "typescript": "^5.9.3",
     "vite": "^7.1.11",
-    "vite-plugin-vue-devtools": "^8.0.3",
-    "vue-tsc": "^3.1.1"
-  },
-  "devDependencies": {
-    "@types/node": "^24.8.1"
+    "vite-plugin-vue-devtools": "^8.0.3"
   }
 }
