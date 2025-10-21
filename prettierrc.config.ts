@@ -12,5 +12,4 @@ export default {
     "prettier-plugin-packagejson",
     "prettier-plugin-jsdoc",
   ],
-  tsdoc: true,
 } satisfies Config;
