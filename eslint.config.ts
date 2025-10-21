@@ -17,6 +17,7 @@ import perfectionist from "eslint-plugin-perfectionist";
 import prettierConfigsRecommended from "eslint-plugin-prettier/recommended";
 import { configs as regexpConfigs } from "eslint-plugin-regexp";
 import vue from "eslint-plugin-vue";
+import vuePug from "eslint-plugin-vue-pug";
 
 /* -------------------------------------------------------------------------- */
 /*                        Настройка eslint для проекта                        */
@@ -26,6 +27,7 @@ export default defineConfigWithVueTs(
   gitignore(),
   {
     extends: [
+      vuePug.configs["flat/recommended"],
       js.configs.recommended,
       vue.configs["flat/recommended"],
       vueTsConfigs.strictTypeChecked,
