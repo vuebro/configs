@@ -8,8 +8,9 @@ export default {
   endOfLine: "auto",
   plugins: [
     "@prettier/plugin-pug",
+    "prettier-plugin-jsdoc",
     "prettier-plugin-tailwindcss",
     "prettier-plugin-packagejson",
-    "prettier-plugin-jsdoc",
   ],
+  tsdoc: true,
 } satisfies Config;
