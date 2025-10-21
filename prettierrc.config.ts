@@ -10,5 +10,7 @@ export default {
     "@prettier/plugin-pug",
     "prettier-plugin-tailwindcss",
     "prettier-plugin-packagejson",
+    "prettier-plugin-jsdoc",
   ],
+  tsdoc: true,
 } satisfies Config;
