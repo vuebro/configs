@@ -43,6 +43,7 @@ export default defineConfigWithVueTs(
           whitelist: ["electron"],
         },
       ],
+      "jsdoc/tag-lines": ["error", { startLines: null }],
       // "jsdoc/require-jsdoc": [
       //   "error",
       //   {
