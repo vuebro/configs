@@ -56,7 +56,6 @@ export default defineConfigWithVueTs(
           },
         },
       ],
-      "jsdoc/tag-lines": 0,
     },
   },
   deMorganConfigs.recommended,
