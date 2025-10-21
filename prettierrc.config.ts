@@ -6,6 +6,7 @@ import type { Config } from "prettier";
 
 export default {
   endOfLine: "auto",
+  jsdocCommentLineStrategy: "multiline",
   plugins: [
     "@prettier/plugin-pug",
     "prettier-plugin-jsdoc",
