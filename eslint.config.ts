@@ -15,7 +15,6 @@ import jsDoc from "eslint-plugin-jsdoc";
 import { configs as packageJsonConfigs } from "eslint-plugin-package-json";
 import perfectionist from "eslint-plugin-perfectionist";
 import prettierConfigsRecommended from "eslint-plugin-prettier/recommended";
-import { configs as regexpConfigs } from "eslint-plugin-regexp";
 import vue from "eslint-plugin-vue";
 import vuePug from "eslint-plugin-vue-pug";
 
@@ -34,7 +33,6 @@ export default defineConfigWithVueTs(
       vueTsConfigs.stylisticTypeChecked,
       perfectionist.configs["recommended-natural"],
       jsDoc.configs["flat/recommended"],
-      regexpConfigs["flat/recommended"],
     ],
     files: ["**/*.{ts,vue}"],
     rules: {
