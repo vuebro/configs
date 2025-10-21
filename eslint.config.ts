@@ -43,7 +43,6 @@ export default defineConfigWithVueTs(
           whitelist: ["electron"],
         },
       ],
-      // "jsdoc/tag-lines": 0,
       "jsdoc/require-jsdoc": [
         "error",
         {
@@ -57,6 +56,7 @@ export default defineConfigWithVueTs(
           },
         },
       ],
+      "jsdoc/tag-lines": 0,
     },
   },
   deMorganConfigs.recommended,
