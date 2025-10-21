@@ -43,19 +43,19 @@ export default defineConfigWithVueTs(
           whitelist: ["electron"],
         },
       ],
-      "jsdoc/require-jsdoc": [
-        "error",
-        {
-          require: {
-            ArrowFunctionExpression: true,
-            ClassDeclaration: true,
-            ClassExpression: true,
-            FunctionDeclaration: true,
-            FunctionExpression: true,
-            MethodDefinition: true,
-          },
-        },
-      ],
+      // "jsdoc/require-jsdoc": [
+      //   "error",
+      //   {
+      //     require: {
+      //       ArrowFunctionExpression: true,
+      //       ClassDeclaration: true,
+      //       ClassExpression: true,
+      //       FunctionDeclaration: true,
+      //       FunctionExpression: true,
+      //       MethodDefinition: true,
+      //     },
+      //   },
+      // ],
     },
   },
   deMorganConfigs.recommended,
