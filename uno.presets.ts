@@ -4,6 +4,7 @@ import type { TagifyOptions } from "@unocss/preset-tagify";
 import type { TypographyOptions } from "@unocss/preset-typography";
 import type { WebFontsOptions } from "@unocss/preset-web-fonts";
 import type { PresetWind4Options } from "@unocss/preset-wind4";
+import type { PresetOrFactoryAwaitable } from "unocss";
 
 import attributify from "@unocss/preset-attributify";
 import icons from "@unocss/preset-icons/browser";
@@ -30,11 +31,12 @@ export default ({
   typographyOptions?: TypographyOptions;
   webFontsOptions?: WebFontsOptions;
   wind4Options?: PresetWind4Options;
-} = {}) => [
-  attributify(attributifyOptions),
-  icons(iconsOptions),
-  tagify(tagifyOptions),
-  typography(typographyOptions),
-  webFonts(webFontsOptions),
-  wind4(wind4Options),
-];
+} = {}) =>
+  [
+    attributify(attributifyOptions),
+    icons(iconsOptions),
+    tagify(tagifyOptions),
+    typography(typographyOptions),
+    webFonts(webFontsOptions),
+    wind4(wind4Options),
+  ] satisfies PresetOrFactoryAwaitable[];
