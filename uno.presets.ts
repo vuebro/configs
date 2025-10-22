@@ -39,4 +39,4 @@ export default ({
     typography(typographyOptions),
     webFonts(webFontsOptions),
     wind4(wind4Options),
-  ] satisfies PresetOrFactoryAwaitable[];
+  ] as PresetOrFactoryAwaitable[];
