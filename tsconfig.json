@@ -1,5 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "exclude": ["${configDir}/dist", "${configDir}/node_modules"],
   "extends": [
     "@vue/tsconfig/tsconfig",
     "@vue/tsconfig/tsconfig.dom",
