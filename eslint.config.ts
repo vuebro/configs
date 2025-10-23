@@ -36,13 +36,6 @@ export default defineConfigWithVueTs(
     ],
     files: ["**/*.{ts,vue}"],
     rules: {
-      "import-x/no-extraneous-dependencies": [
-        "error",
-        {
-          devDependencies: ["*.config.ts"],
-          whitelist: ["electron"],
-        },
-      ],
       "jsdoc/tag-lines": ["warn", "any", { startLines: 1 }],
       // "jsdoc/require-jsdoc": [
       //   "error",
