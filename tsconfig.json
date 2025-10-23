@@ -10,6 +10,7 @@
   "compilerOptions": {
     "allowImportingTsExtensions": false,
     "emitDeclarationOnly": false,
+    "incremental": true,
     "outDir": "${configDir}/dist",
     "paths": { "@/*": ["./*"] },
     "removeComments": true,
