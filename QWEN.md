@@ -1,4 +1,4 @@
-# @vuebro/configs - Project Context
+# <!-- Import failed: vuebro/configs - ENOENT: no such file or directory, access '/Users/jbruwes/Development/vuebro/configs/vuebro/configs' --> - Project Context
 
 ## Project Overview
 
