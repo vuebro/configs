@@ -78,6 +78,7 @@ export default config;
 ## What's Included
 
 ### ESLint Config
+
 - Vue best practices with `eslint-plugin-vue`
 - TypeScript support with `@vue/eslint-config-typescript`
 - Pug template support with `eslint-plugin-vue-pug`
@@ -87,6 +88,7 @@ export default config;
 - Integration with Prettier using `eslint-plugin-prettier`
 
 ### Prettier Config
+
 - Automatic line ending handling
 - Pug template formatting via `@prettier/plugin-pug`
 - Enhanced JSDoc formatting with `prettier-plugin-jsdoc`
@@ -94,6 +96,7 @@ export default config;
 - package.json formatting with `prettier-plugin-packagejson`
 
 ### UnoCSS Config
+
 - Pug template extractor
 - Arbitrary variants extractor
 - Transformer for variant groups
@@ -101,6 +104,7 @@ export default config;
 - Transformer for class compilation
 
 ### Vite Config
+
 - Vue plugin integration
 - UnoCSS plugin integration
 - Vue DevTools plugin

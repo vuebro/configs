@@ -5,13 +5,13 @@ import type { Config } from "prettier";
 /* -------------------------------------------------------------------------- */
 
 export default {
-  endOfLine: "auto",
-  jsdocCommentLineStrategy: "keep",
   plugins: [
     "@prettier/plugin-pug",
     "prettier-plugin-jsdoc",
     "prettier-plugin-tailwindcss",
     "prettier-plugin-packagejson",
   ],
+  jsdocCommentLineStrategy: "keep",
+  endOfLine: "auto",
   tsdoc: true,
 } satisfies Config;

@@ -28,27 +28,32 @@
 ## Building and Running
 
 ### Build Process
+
 ```bash
 npm run build  # Compiles TypeScript to JavaScript with declaration files
 ```
 
 ### Linting
+
 ```bash
 npm run lint   # Runs ESLint to check code quality
 ```
 
 ### Project Build System
+
 The project uses TypeScript to compile configuration files into distributable format located in the `dist/` directory.
 
 ## Development Conventions
 
 ### Code Style & Formatting
+
 - Uses Prettier with specific plugins for Pug, JSDoc, Tailwind CSS, and package.json
 - Automatic line ending handling set to 'auto'
 - JSDoc comments preserved with 'keep' strategy
 - Tailwind CSS class sorting enabled
 
 ### Code Quality & Linting
+
 - ESLint configured with Vue best practices and TypeScript support
 - Pug template support through `eslint-plugin-vue-pug`
 - Import/export rules with `eslint-plugin-import-x`
@@ -57,6 +62,7 @@ The project uses TypeScript to compile configuration files into distributable fo
 - Integration with Prettier using `eslint-plugin-prettier`
 
 ### TypeScript Configuration
+
 - Strictest TypeScript settings from `@tsconfig/strictest`
 - Vue-specific configurations from `@vue/tsconfig`
 - DOM and library configurations included
@@ -64,6 +70,7 @@ The project uses TypeScript to compile configuration files into distributable fo
 - Vue compiler options configured with Pug plugin support
 
 ### UnoCSS Configuration
+
 - Pug template extractor for class detection
 - Arbitrary variants extractor
 - Transformer for variant groups
@@ -71,6 +78,7 @@ The project uses TypeScript to compile configuration files into distributable fo
 - Transformer for class compilation
 
 ### Vite Configuration
+
 - Vue plugin integration
 - UnoCSS plugin integration
 - Vue DevTools plugin
@@ -81,8 +89,9 @@ The project uses TypeScript to compile configuration files into distributable fo
 ## Package Exports
 
 The package exports multiple configuration files for different tools:
+
 - `"./eslint"`: ESLint configuration
-- `"./prettierrc"`: Prettier configuration  
+- `"./prettierrc"`: Prettier configuration
 - `"./tsconfig"`: TypeScript configuration
 - `"./uno"`: UnoCSS configuration
 - `"./uno/presets"`: UnoCSS presets
@@ -91,6 +100,7 @@ The package exports multiple configuration files for different tools:
 ## Key Features
 
 ### ESLint Config
+
 - Vue best practices with `eslint-plugin-vue`
 - TypeScript support with `@vue/eslint-config-typescript`
 - Pug template support with `eslint-plugin-vue-pug`
@@ -100,6 +110,7 @@ The package exports multiple configuration files for different tools:
 - Integration with Prettier using `eslint-plugin-prettier`
 
 ### Prettier Config
+
 - Automatic line ending handling
 - Pug template formatting via `@prettier/plugin-pug`
 - Enhanced JSDoc formatting with `prettier-plugin-jsdoc`
@@ -107,6 +118,7 @@ The package exports multiple configuration files for different tools:
 - package.json formatting with `prettier-plugin-packagejson`
 
 ### UnoCSS Config
+
 - Pug template extractor
 - Arbitrary variants extractor
 - Transformer for variant groups
@@ -114,6 +126,7 @@ The package exports multiple configuration files for different tools:
 - Transformer for class compilation
 
 ### Vite Config
+
 - Vue plugin integration
 - UnoCSS plugin integration
 - Vue DevTools plugin
@@ -131,6 +144,7 @@ jbruwes
 ## Usage Instructions for Future Interactions
 
 When working with this project:
+
 - Remember the focus is on providing shared configurations for Vue projects
 - The configurations are designed to work together for a cohesive development experience
 - All configurations are written in TypeScript and compiled to JavaScript
