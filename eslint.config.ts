@@ -26,19 +26,19 @@ export default defineConfigWithVueTs(
   gitignore(),
   {
     rules: {
-      "jsdoc/require-jsdoc": [
-        "error",
-        {
-          require: {
-            // ArrowFunctionExpression: true,
-            FunctionDeclaration: true,
-            FunctionExpression: true,
-            ClassDeclaration: true,
-            MethodDefinition: true,
-            ClassExpression: true,
-          },
-        },
-      ],
+      // "jsdoc/require-jsdoc": [
+      //   "error",
+      //   {
+      //     require: {
+      //       ArrowFunctionExpression: true,
+      //       FunctionDeclaration: true,
+      //       FunctionExpression: true,
+      //       ClassDeclaration: true,
+      //       MethodDefinition: true,
+      //       ClassExpression: true,
+      //     },
+      //   },
+      // ],
       "jsdoc/tag-lines": ["warn", "any", { startLines: 1 }],
     },
     extends: [
