@@ -35,6 +35,7 @@ export default defineConfigWithVueTs(
       //     },
       //   },
       // ],
+      "@typescript-eslint/no-use-before-define": ["error", "nofunc"],
       "jsdoc/tag-lines": ["warn", "any", { startLines: 1 }],
     },
     extends: [
