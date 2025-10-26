@@ -1,53 +1,53 @@
 import type { ConfigWithExtendsArray } from "@eslint/config-helpers";
 
+import js from "@eslint/js";
+import json from "@eslint/json";
+import markdown from "@eslint/markdown";
 import {
   defineConfigWithVueTs,
   vueTsConfigs,
 } from "@vue/eslint-config-typescript";
-import prettierConfigsRecommended from "eslint-plugin-prettier/recommended";
-import { configs as packageJsonConfigs } from "eslint-plugin-package-json";
-import { flatConfigs as importXConfigs } from "eslint-plugin-import-x";
+import gitignore from "eslint-config-flat-gitignore";
 import { configs as deMorganConfigs } from "eslint-plugin-de-morgan";
 import { configs as dependConfigs } from "eslint-plugin-depend";
-import perfectionist from "eslint-plugin-perfectionist";
-import gitignore from "eslint-config-flat-gitignore";
-import vuePug from "eslint-plugin-vue-pug";
-import markdown from "@eslint/markdown";
+import { flatConfigs as importXConfigs } from "eslint-plugin-import-x";
 import jsDoc from "eslint-plugin-jsdoc";
+import { configs as packageJsonConfigs } from "eslint-plugin-package-json";
+import perfectionist from "eslint-plugin-perfectionist";
+import prettierConfigsRecommended from "eslint-plugin-prettier/recommended";
 import vue from "eslint-plugin-vue";
-import json from "@eslint/json";
-import js from "@eslint/js";
+import vuePug from "eslint-plugin-vue-pug";
 
 export default defineConfigWithVueTs(
   gitignore(),
   {
-    rules: {
-      // "jsdoc/require-jsdoc": [
-      //   "error",
-      //   {
-      //     require: {
-      //       ArrowFunctionExpression: true,
-      //       FunctionDeclaration: true,
-      //       FunctionExpression: true,
-      //       ClassDeclaration: true,
-      //       MethodDefinition: true,
-      //       ClassExpression: true,
-      //     },
-      //   },
-      // ],
-      "@typescript-eslint/no-use-before-define": ["error", "nofunc"],
-      "jsdoc/tag-lines": ["warn", "any", { startLines: 1 }],
-    },
     extends: [
       vuePug.configs["flat/recommended"],
       js.configs.recommended,
       vue.configs["flat/recommended"],
       vueTsConfigs.strictTypeChecked,
       vueTsConfigs.stylisticTypeChecked,
-      perfectionist.configs["recommended-line-length"],
+      perfectionist.configs["recommended-natural"],
       jsDoc.configs["flat/recommended"],
     ],
     files: ["**/*.{ts,vue}"],
+    rules: {
+      "@typescript-eslint/no-use-before-define": ["error", "nofunc"],
+      // "jsdoc/require-jsdoc": [
+      //   "error",
+      //   {
+      //     require: {
+      //       ArrowFunctionExpression: true,
+      //       ClassDeclaration: true,
+      //       ClassExpression: true,
+      //       FunctionDeclaration: true,
+      //       FunctionExpression: true,
+      //       MethodDefinition: true,
+      //     },
+      //   },
+      // ],
+      "jsdoc/tag-lines": ["warn", "any", { startLines: 1 }],
+    },
   },
   deMorganConfigs.recommended,
   importXConfigs.recommended,

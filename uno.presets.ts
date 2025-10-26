@@ -1,32 +1,32 @@
 import type { AttributifyOptions } from "@unocss/preset-attributify";
-import type { TypographyOptions } from "@unocss/preset-typography";
 import type { IconsOptions } from "@unocss/preset-icons/browser";
+import type { TagifyOptions } from "@unocss/preset-tagify";
+import type { TypographyOptions } from "@unocss/preset-typography";
 import type { WebFontsOptions } from "@unocss/preset-web-fonts";
 import type { PresetWind4Options } from "@unocss/preset-wind4";
-import type { TagifyOptions } from "@unocss/preset-tagify";
 import type { PresetOrFactoryAwaitable } from "unocss";
 
 import attributify from "@unocss/preset-attributify";
-import typography from "@unocss/preset-typography";
 import icons from "@unocss/preset-icons/browser";
-import webFonts from "@unocss/preset-web-fonts";
 import tagify from "@unocss/preset-tagify";
+import typography from "@unocss/preset-typography";
+import webFonts from "@unocss/preset-web-fonts";
 import wind4 from "@unocss/preset-wind4";
 
 export default ({
-  iconsOptions = { cdn: "https://cdn.jsdelivr.net/npm/" },
-  wind4Options = { preflights: { reset: true } },
   attributifyOptions,
+  iconsOptions = { cdn: "https://cdn.jsdelivr.net/npm/" },
+  tagifyOptions,
   typographyOptions,
   webFontsOptions,
-  tagifyOptions,
+  wind4Options = { preflights: { reset: true } },
 }: {
   attributifyOptions?: AttributifyOptions;
+  iconsOptions?: IconsOptions;
+  tagifyOptions?: TagifyOptions;
   typographyOptions?: TypographyOptions;
   webFontsOptions?: WebFontsOptions;
   wind4Options?: PresetWind4Options;
-  tagifyOptions?: TagifyOptions;
-  iconsOptions?: IconsOptions;
 } = {}) =>
   [
     attributify(attributifyOptions),
