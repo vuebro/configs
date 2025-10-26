@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker-russian",
+    "streetsidesoftware.code-spell-checker",
+    "qwenlm.qwen-code-vscode-ide-companion",
+    "pflannery.vscode-versionlens",
+    "bradlc.vscode-tailwindcss",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "l13rary.l13-projects",
+    "aminer.codegeex",
+    "vue.volar"
+  ]
+}
