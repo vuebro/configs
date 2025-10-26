@@ -13,10 +13,6 @@ import webFonts from "@unocss/preset-web-fonts";
 import tagify from "@unocss/preset-tagify";
 import wind4 from "@unocss/preset-wind4";
 
-/* -------------------------------------------------------------------------- */
-/*                         Пресеты UnoCSS для проекта                         */
-/* -------------------------------------------------------------------------- */
-
 export default ({
   iconsOptions = { cdn: "https://cdn.jsdelivr.net/npm/" },
   wind4Options = { preflights: { reset: true } },

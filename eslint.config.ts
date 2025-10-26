@@ -18,10 +18,6 @@ import vue from "eslint-plugin-vue";
 import json from "@eslint/json";
 import js from "@eslint/js";
 
-/* -------------------------------------------------------------------------- */
-/*                        Настройка eslint для проекта                        */
-/* -------------------------------------------------------------------------- */
-
 export default defineConfigWithVueTs(
   gitignore(),
   {

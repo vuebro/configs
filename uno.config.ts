@@ -7,10 +7,6 @@ import {
 import { extractorArbitraryVariants } from "@unocss/extractor-arbitrary-variants";
 import extractorPug from "@unocss/extractor-pug";
 
-/* -------------------------------------------------------------------------- */
-/*                        Настройки UnoCSS для проекта                        */
-/* -------------------------------------------------------------------------- */
-
 export default defineConfig({
   transformers: [
     transformerVariantGroup(),
