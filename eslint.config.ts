@@ -40,7 +40,7 @@ export default defineConfigWithVueTs(
           devDependencies: ["*.config.ts"],
           optionalDependencies: false,
           peerDependencies: false,
-          whitelist: ["electron"],
+          whitelist: ["electron", "@vuebro/configs"],
         },
       ],
       // "jsdoc/require-jsdoc": [
