@@ -9,6 +9,7 @@
   ],
   "compilerOptions": {
     "allowImportingTsExtensions": false,
+    "allowJs": true,
     "emitDeclarationOnly": false,
     "incremental": true,
     "outDir": "${configDir}/dist",

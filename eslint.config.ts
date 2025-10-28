@@ -33,6 +33,16 @@ export default defineConfigWithVueTs(
     files: ["**/*.{ts,vue}"],
     rules: {
       "@typescript-eslint/no-use-before-define": ["error", "nofunc"],
+      "import-x/no-extraneous-dependencies": [
+        "error",
+        {
+          bundledDependencies: false,
+          devDependencies: ["*.config.ts"],
+          optionalDependencies: false,
+          peerDependencies: false,
+          whitelist: ["electron"],
+        },
+      ],
       // "jsdoc/require-jsdoc": [
       //   "error",
       //   {
