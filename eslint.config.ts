@@ -33,6 +33,7 @@ export default defineConfigWithVueTs(
     files: ["**/*.{ts,vue}"],
     rules: {
       "@typescript-eslint/no-use-before-define": ["error", "nofunc"],
+      "@typescript-eslint/unified-signatures": "off",
       "import-x/no-extraneous-dependencies": [
         "error",
         {
