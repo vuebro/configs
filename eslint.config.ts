@@ -45,19 +45,19 @@ export default defineConfigWithVueTs(
           whitelist: ["electron", "@vuebro/configs"],
         },
       ],
-      // "jsdoc/require-jsdoc": [
-      //   "error",
-      //   {
-      //     require: {
-      //       ArrowFunctionExpression: true,
-      //       ClassDeclaration: true,
-      //       ClassExpression: true,
-      //       FunctionDeclaration: true,
-      //       FunctionExpression: true,
-      //       MethodDefinition: true,
-      //     },
-      //   },
-      // ],
+      "jsdoc/require-jsdoc": [
+        "error",
+        {
+          require: {
+            ArrowFunctionExpression: true,
+            ClassDeclaration: true,
+            ClassExpression: true,
+            FunctionDeclaration: true,
+            FunctionExpression: true,
+            MethodDefinition: true,
+          },
+        },
+      ],
       "jsdoc/tag-lines": ["warn", "any", { startLines: 1 }],
     },
   },
