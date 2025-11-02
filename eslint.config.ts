@@ -1,3 +1,9 @@
+/**
+ * ESLint configuration for Vue.js projects with TypeScript, Pug, and various plugins.
+ * This configuration includes recommended settings from multiple plugins and presets
+ * to ensure code quality and consistency across Vue projects.
+ */
+
 import type { ConfigWithExtendsArray } from "@eslint/config-helpers";
 
 import js from "@eslint/js";
@@ -18,6 +24,10 @@ import prettierConfigsRecommended from "eslint-plugin-prettier/recommended";
 import vue from "eslint-plugin-vue";
 import vuePug from "eslint-plugin-vue-pug";
 
+/**
+ * The main ESLint configuration export that combines multiple configuration presets
+ * and plugins for a comprehensive linting setup for Vue.js projects with TypeScript.
+ */
 export default defineConfigWithVueTs(
   gitignore(),
   {
