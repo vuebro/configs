@@ -51,7 +51,6 @@
   "dependencies": {
     "@eslint/js": "^9.39.0",
     "@eslint/json": "^0.13.2",
-    "@eslint/markdown": "^7.5.0",
     "@prettier/plugin-pug": "^3.4.2",
     "@tsconfig/strictest": "^2.0.7",
     "@unocss/extractor-arbitrary-variants": "^66.5.4",
@@ -76,7 +75,7 @@
     "eslint-plugin-de-morgan": "^2.0.0",
     "eslint-plugin-depend": "^1.3.1",
     "eslint-plugin-import-x": "^4.16.1",
-    "eslint-plugin-jsdoc": "^61.1.11",
+    "eslint-plugin-jsdoc": "^61.1.12",
     "eslint-plugin-package-json": "^0.59.1",
     "eslint-plugin-perfectionist": "^4.15.1",
     "eslint-plugin-prettier": "^5.5.4",

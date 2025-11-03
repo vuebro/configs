@@ -2,7 +2,6 @@ import type { ConfigWithExtendsArray } from "@eslint/config-helpers";
 
 import js from "@eslint/js";
 import json from "@eslint/json";
-import markdown from "@eslint/markdown";
 import {
   defineConfigWithVueTs,
   vueTsConfigs,
@@ -66,7 +65,6 @@ export default defineConfigWithVueTs(
   importXConfigs.typescript,
   dependConfigs["flat/recommended"],
   json.configs.recommended,
-  markdown.configs.recommended,
   packageJsonConfigs.recommended,
   prettierConfigsRecommended,
 ) as ConfigWithExtendsArray;
