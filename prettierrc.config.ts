@@ -6,8 +6,9 @@ export default {
   plugins: [
     "@prettier/plugin-pug",
     "prettier-plugin-jsdoc",
-    "prettier-plugin-tailwindcss",
     "prettier-plugin-packagejson",
+    "prettier-plugin-tailwindcss",
   ],
   tsdoc: true,
+  vueIndentScriptAndStyle: true,
 } satisfies Config;

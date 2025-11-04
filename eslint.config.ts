@@ -32,8 +32,6 @@ export default defineConfigWithVueTs(
     files: ["**/*.{ts,vue}"],
     rules: {
       "@typescript-eslint/no-use-before-define": ["error", "nofunc"],
-      /** @see {@link https://github.com/eslint/eslint/issues/20272 }*/
-      "@typescript-eslint/unified-signatures": "off",
       "import-x/no-extraneous-dependencies": [
         "error",
         {
