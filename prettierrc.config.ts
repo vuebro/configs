@@ -10,5 +10,4 @@ export default {
     "prettier-plugin-tailwindcss",
   ],
   tsdoc: true,
-  vueIndentScriptAndStyle: true,
 } satisfies Config;
