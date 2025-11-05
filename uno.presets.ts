@@ -18,15 +18,15 @@ import wind4 from "@unocss/preset-wind4";
  * This function allows customization of various UnoCSS presets including
  * attributify, icons, tagify, typography, web fonts, and wind.
  *
- * @param {object} root0 - The configuration object for UnoCSS presets
- * @param {AttributifyOptions} [root0.attributifyOptions] - Options for the attributify preset
- * @param {IconsOptions} [root0.iconsOptions] - Options for the icons preset, defaults to using jsdelivr CDN
- * @param {TagifyOptions} [root0.tagifyOptions] - Options for the tagify preset
- * @param {TypographyOptions} [root0.typographyOptions] - Options for the typography preset
- * @param {WebFontsOptions} [root0.webFontsOptions] - Options for the web fonts preset
- * @param {PresetWind4Options} [root0.wind4Options] - Options for the wind4 preset, defaults to having reset preflights enabled
+ * @param root0 - The configuration object for UnoCSS presets
+ * @param [root0.attributifyOptions] - Options for the attributify preset
+ * @param [root0.iconsOptions] - Options for the icons preset, defaults to using jsdelivr CDN
+ * @param [root0.tagifyOptions] - Options for the tagify preset
+ * @param [root0.typographyOptions] - Options for the typography preset
+ * @param [root0.webFontsOptions] - Options for the web fonts preset
+ * @param [root0.wind4Options] - Options for the wind4 preset, defaults to having reset preflights enabled
  *
- * @returns {PresetOrFactoryAwaitable[]} An array of UnoCSS presets that can be used in UnoCSS configuration
+ * @returns An array of UnoCSS presets that can be used in UnoCSS configuration
  */
 export default ({
   attributifyOptions,

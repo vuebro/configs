@@ -27,7 +27,7 @@ export default defineConfigWithVueTs(
       vueTsConfigs.strictTypeChecked,
       vueTsConfigs.stylisticTypeChecked,
       perfectionist.configs["recommended-natural"],
-      jsDoc.configs["flat/recommended"],
+      jsDoc.configs["flat/recommended-typescript"],
     ],
     files: ["**/*.{ts,vue}"],
     rules: {
@@ -43,7 +43,7 @@ export default defineConfigWithVueTs(
         },
       ],
       "jsdoc/require-jsdoc": [
-        "error",
+        "warn",
         {
           require: {
             ArrowFunctionExpression: true,
