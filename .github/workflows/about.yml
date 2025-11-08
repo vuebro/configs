@@ -5,6 +5,9 @@ on:
       - main
     paths:
       - "package.json"
+permissions:
+  administration: write
+  contents: read
 jobs:
   update-about:
     runs-on: ubuntu-latest
@@ -16,3 +19,5 @@ jobs:
           script: |
             const fs = require("fs"), { repo: { owner, repo } } = context, { description, keywords: topics, homepage: website } = JSON.parse(fs.readFileSync("package.json", "utf8"));
             await github.rest.repos.update({ owner, repo, description, topics, website });
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
