@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - "package.json"
+permissions: write-all
 jobs:
   update-about:
     runs-on: ubuntu-latest
@@ -12,7 +13,6 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/github-script@v8
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const fs = require("fs"), { repo: { owner, repo } } = context, { description, keywords: topics, homepage: website } = JSON.parse(fs.readFileSync("package.json", "utf8"));
             await github.rest.repos.update({ owner, repo, description, topics, website });
