@@ -9,8 +9,8 @@ jobs:
   update-about:
     runs-on: ubuntu-latest
     steps:
-        uses: actions/checkout@v5
-        uses: actions/github-script@v8
+      - uses: actions/checkout@v5
+      - uses: actions/github-script@v8
         with:
           script: |
             const fs = require("fs"), { repo: { owner, repo } } = context, { description, keywords: topics, homepage: website } = JSON.parse(fs.readFileSync("package.json", "utf8"));
