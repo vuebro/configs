@@ -1,6 +1,6 @@
 {
   "name": "@vuebro/configs",
-  "version": "1.1.71",
+  "version": "1.1.72",
   "description": "A comprehensive collection of shared configuration files for Vue.js projects with TypeScript, ESLint, Prettier, UnoCSS, and Vite, featuring Pug support",
   "keywords": [
     "vue",
