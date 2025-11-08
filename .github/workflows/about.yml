@@ -5,11 +5,11 @@ on:
       - main
     paths:
       - "package.json"
+permissions:
+  administrator: write
 jobs:
   update-about:
     runs-on: ubuntu-latest
-    permissions:
-      administration: write
     steps:
       - uses: actions/checkout@v5
       - uses: actions/github-script@v8
