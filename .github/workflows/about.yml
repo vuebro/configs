@@ -6,7 +6,7 @@ on:
     paths:
       - "package.json"
 permissions:
-  administration: write
+  contents: write
 jobs:
   update-about:
     runs-on: ubuntu-latest
