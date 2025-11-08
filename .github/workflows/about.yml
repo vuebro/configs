@@ -8,13 +8,6 @@ on:
 jobs:
   update-about:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      packages: write
-      id-token: write
-      attestations: write
-      pull-requests: write
-      repository-projects: write
     steps:
       - uses: actions/checkout@v5
       - uses: actions/github-script@v8
