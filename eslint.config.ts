@@ -64,5 +64,6 @@ export default defineConfigWithVueTs(
   dependConfigs["flat/recommended"],
   json.configs.recommended,
   packageJsonConfigs.recommended,
+  packageJsonConfigs.stylistic,
   prettierConfigsRecommended,
 ) as ConfigWithExtendsArray;
