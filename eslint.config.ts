@@ -8,7 +8,6 @@ import {
 } from "@vue/eslint-config-typescript";
 import gitignore from "eslint-config-flat-gitignore";
 import { configs as deMorganConfigs } from "eslint-plugin-de-morgan";
-import { configs as dependConfigs } from "eslint-plugin-depend";
 import { flatConfigs as importXConfigs } from "eslint-plugin-import-x";
 import jsDoc from "eslint-plugin-jsdoc";
 import { configs as packageJsonConfigs } from "eslint-plugin-package-json";
@@ -61,7 +60,6 @@ export default defineConfigWithVueTs(
   deMorganConfigs.recommended,
   importXConfigs.recommended,
   importXConfigs.typescript,
-  dependConfigs["flat/recommended"],
   json.configs.recommended,
   packageJsonConfigs.recommended,
   packageJsonConfigs.stylistic,
