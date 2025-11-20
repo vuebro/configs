@@ -56,6 +56,7 @@ export default defineConfigWithVueTs(
         },
       ],
       "jsdoc/tag-lines": ["warn", "any", { startLines: 1 }],
+      "vue/attributes-order": ["warn", { alphabetical: true }],
     },
   },
   deMorganConfigs.recommended,
