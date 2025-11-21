@@ -42,19 +42,6 @@ export default defineConfigWithVueTs(
           whitelist: ["electron", "@vuebro/configs"],
         },
       ],
-      "jsdoc/require-jsdoc": [
-        "warn",
-        {
-          require: {
-            ArrowFunctionExpression: true,
-            ClassDeclaration: true,
-            ClassExpression: true,
-            FunctionDeclaration: true,
-            FunctionExpression: true,
-            MethodDefinition: true,
-          },
-        },
-      ],
       "jsdoc/tag-lines": ["warn", "any", { startLines: 1 }],
       "vue/attributes-order": ["warn", { alphabetical: true }],
     },
