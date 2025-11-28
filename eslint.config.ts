@@ -2,6 +2,7 @@ import type { ConfigWithExtendsArray } from "@eslint/config-helpers";
 
 import js from "@eslint/js";
 import json from "@eslint/json";
+import unocss from "@unocss/eslint-config/flat";
 import {
   defineConfigWithVueTs,
   vueTsConfigs,
@@ -27,6 +28,7 @@ export default defineConfigWithVueTs(
       vueTsConfigs.strictTypeChecked,
       vueTsConfigs.stylisticTypeChecked,
       perfectionist.configs["recommended-natural"],
+      unocss,
       jsDoc.configs["flat/recommended-typescript"],
     ],
     files: ["**/*.{ts,vue}"],
