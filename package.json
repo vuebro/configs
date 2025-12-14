@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.schemastore.org/package",
   "name": "@vuebro/configs",
-  "version": "1.2.26",
+  "version": "1.2.27",
   "description": "A comprehensive collection of shared configuration files for Vue.js projects with TypeScript, ESLint, Prettier, UnoCSS, and Vite, featuring Pug support",
   "keywords": [
     "vue",
