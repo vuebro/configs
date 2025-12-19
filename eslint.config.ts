@@ -13,7 +13,7 @@ import { configs as dependConfigs } from "eslint-plugin-depend";
 import { flatConfigs as importXConfigs } from "eslint-plugin-import-x";
 import jsDoc from "eslint-plugin-jsdoc";
 import { configs as packageJsonConfigs } from "eslint-plugin-package-json";
-import perfectionist from "eslint-plugin-perfectionist";
+import { configs as perfectionistConfigs } from "eslint-plugin-perfectionist";
 import prettierConfigsRecommended from "eslint-plugin-prettier/recommended";
 import vue from "eslint-plugin-vue";
 import vuePug from "eslint-plugin-vue-pug";
@@ -27,7 +27,7 @@ export default defineConfigWithVueTs(
       vue.configs["flat/recommended"],
       vueTsConfigs.strictTypeChecked,
       vueTsConfigs.stylisticTypeChecked,
-      perfectionist.configs["recommended-natural"],
+      perfectionistConfigs["recommended-natural"],
       unocss,
       jsDoc.configs["flat/recommended-typescript"],
     ],

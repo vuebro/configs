@@ -90,7 +90,7 @@
     "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-jsdoc": "^61.5.0",
     "eslint-plugin-package-json": "^0.85.0",
-    "eslint-plugin-perfectionist": "^4.15.1",
+    "eslint-plugin-perfectionist": "^5.0.0",
     "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-vue": "^10.6.2",
     "eslint-plugin-vue-pug": "^1.0.0-alpha.4",
@@ -103,14 +103,14 @@
     "tsc-alias": "^1.8.16",
     "typescript": "^5.9.3",
     "unocss": "^66.5.10",
-    "vite": "^7.2.7",
+    "vite": "^7.3.0",
     "vite-plugin-vue-devtools": "^8.0.5",
-    "vite-tsconfig-paths": "^5.1.4",
+    "vite-tsconfig-paths": "^6.0.3",
     "vue-eslint-parser-template-tokenizer-pug": "^1.0.0",
     "vue-tsc": "^3.1.8"
   },
   "devDependencies": {
     "@eslint/config-helpers": "^0.5.0",
-    "@types/node": "^25.0.2"
+    "@types/node": "^25.0.3"
   }
 }
