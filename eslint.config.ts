@@ -27,7 +27,7 @@ export default defineConfigWithVueTs(
       vue.configs["flat/recommended"],
       vueTsConfigs.strictTypeChecked,
       vueTsConfigs.stylisticTypeChecked,
-      perfectionistConfigs["recommended-natural"],
+      perfectionistConfigs?.["recommended-natural"],
       unocss,
       jsDoc.configs["flat/recommended-typescript"],
     ],
