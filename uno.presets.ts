@@ -6,12 +6,12 @@ import type { WebFontsOptions } from "@unocss/preset-web-fonts";
 import type { PresetWind4Options } from "@unocss/preset-wind4";
 import type { PresetOrFactoryAwaitable } from "unocss";
 
-import attributify from "@unocss/preset-attributify";
-import icons from "@unocss/preset-icons/browser";
-import tagify from "@unocss/preset-tagify";
-import typography from "@unocss/preset-typography";
-import webFonts from "@unocss/preset-web-fonts";
-import wind4 from "@unocss/preset-wind4";
+import { presetAttributify } from "@unocss/preset-attributify";
+import { presetIcons } from "@unocss/preset-icons/browser";
+import { presetTagify } from "@unocss/preset-tagify";
+import { presetTypography } from "@unocss/preset-typography";
+import { presetWebFonts } from "@unocss/preset-web-fonts";
+import { presetWind4 } from "@unocss/preset-wind4";
 
 export default ({
   attributifyOptions,
@@ -29,10 +29,10 @@ export default ({
   wind4Options?: PresetWind4Options;
 } = {}) =>
   [
-    attributify(attributifyOptions),
-    icons(iconsOptions),
-    tagify(tagifyOptions),
-    typography(typographyOptions),
-    webFonts(webFontsOptions),
-    wind4(wind4Options),
+    presetAttributify(attributifyOptions),
+    presetIcons(iconsOptions),
+    presetTagify(tagifyOptions),
+    presetTypography(typographyOptions),
+    presetWebFonts(webFontsOptions),
+    presetWind4(wind4Options),
   ] as PresetOrFactoryAwaitable[];
