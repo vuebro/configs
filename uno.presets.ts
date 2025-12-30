@@ -1,10 +1,10 @@
+import type { Preset } from "@unocss/core";
 import type { AttributifyOptions } from "@unocss/preset-attributify";
 import type { IconsOptions } from "@unocss/preset-icons/browser";
 import type { TagifyOptions } from "@unocss/preset-tagify";
 import type { TypographyOptions } from "@unocss/preset-typography";
 import type { WebFontsOptions } from "@unocss/preset-web-fonts";
 import type { PresetWind4Options } from "@unocss/preset-wind4";
-import type { PresetOrFactoryAwaitable } from "unocss";
 
 import { presetAttributify } from "@unocss/preset-attributify";
 import { presetIcons } from "@unocss/preset-icons/browser";
@@ -35,4 +35,4 @@ export default ({
     presetTypography(typographyOptions),
     presetWebFonts(webFontsOptions),
     presetWind4(wind4Options),
-  ] as PresetOrFactoryAwaitable[];
+  ] as Preset[];
