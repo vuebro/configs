@@ -29,10 +29,10 @@ export default ({
   wind4Options?: PresetWind4Options;
 } = {}) =>
   [
-    presetAttributify(attributifyOptions),
-    presetIcons({ cdn: "https://cdn.jsdelivr.net/npm/", ...iconsOptions }),
-    presetTagify(tagifyOptions),
-    presetTypography(typographyOptions),
-    presetWebFonts(webFontsOptions),
     presetWind4({ preflights: { reset: true }, ...wind4Options }),
+    presetAttributify(attributifyOptions),
+    presetTagify(tagifyOptions),
+    presetIcons({ cdn: "https://cdn.jsdelivr.net/npm/", ...iconsOptions }),
+    presetWebFonts(webFontsOptions),
+    presetTypography(typographyOptions),
   ] as Preset[];
