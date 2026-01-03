@@ -15,11 +15,11 @@ import { presetWind4 } from "@unocss/preset-wind4";
 
 export default ({
   attributifyOptions,
-  iconsOptions = { cdn: "https://cdn.jsdelivr.net/npm/" },
+  iconsOptions,
   tagifyOptions,
   typographyOptions,
   webFontsOptions,
-  wind4Options = { preflights: { reset: true } },
+  wind4Options,
 }: {
   attributifyOptions?: AttributifyOptions;
   iconsOptions?: IconsOptions;
@@ -30,9 +30,9 @@ export default ({
 } = {}) =>
   [
     presetAttributify(attributifyOptions),
-    presetIcons(iconsOptions),
+    presetIcons({ cdn: "https://cdn.jsdelivr.net/npm/", ...iconsOptions }),
     presetTagify(tagifyOptions),
     presetTypography(typographyOptions),
     presetWebFonts(webFontsOptions),
-    presetWind4(wind4Options),
+    presetWind4({ preflights: { reset: true }, ...wind4Options }),
   ] as Preset[];
